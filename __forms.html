@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+  Static form skeleton for Netlify's build-time form detection only.
+  The visible contact form is rendered client-side inside index.html, where
+  Netlify's build bot cannot see it. This file registers the "contact" form and
+  its fields so AJAX submissions from that form are accepted. Not linked in the UI.
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact form</title>
+  </head>
+  <body>
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="name" />
+      <input type="email" name="email" />
+      <input name="session" />
+      <input type="date" name="date" />
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
+  </body>
+</html>
